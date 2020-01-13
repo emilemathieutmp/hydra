@@ -42,7 +42,7 @@ class Plugins:
 
         return clazz.startswith("hydra_plugins.") or clazz.startswith(
             "hydra._internal.core_plugins."
-        )
+        ) or clazz.startswith("geoflow.")
 
     @staticmethod
     def instantiate_sweeper(config, config_loader, task_function):
